@@ -48,7 +48,9 @@
     <!-- ============================================================== -->
     <div class="dashboard-header">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
-            <a class="navbar-brand" href="https://www.cybertekschool.com/">Cybertek</a>
+            <a class="navbar-brand" href="https://www.cybertekschool.com/"
+            >Cybertek</a
+            >
             <button
                     class="navbar-toggler"
                     type="button"
@@ -120,12 +122,12 @@
                     <ul class="navbar-nav flex-column">
                         <li class="nav-divider">
                             <a class="fa fa-fw fa-home" href="welcome.html">Home</a>
-
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link " href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1">
                                 <i class="fa fa-fw fa-user-circle"></i>Administration
                                 <span class="badge badge-success">6</span>
+                            
                             </a>
                             <div id="submenu-1" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
@@ -133,7 +135,7 @@
                                         <a class="nav-link" href="createUser.html">Create an User</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="">Create a Project</a>
+                                        <a class="nav-link" href="createProject.html">Create a Project</a>
                                     </li>
                                 
                                 </ul>
@@ -196,123 +198,10 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">Create User</h2>
+                            <h2 class="pageheader-title">This page is under construction - create a project</h2>
                         </div>
                     </div>
                 
-                </div>
-                <div class="row">
-                    <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="mb-0">User Information</h4>
-                            </div>
-                            <div class="card-body">
-                                <form class="needs-validation" novalidate="">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="firstName">First name</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                                            <div class="invalid-feedback">
-                                                Valid first name is required.
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="lastName">Last name</label>
-                                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                                            <div class="invalid-feedback">
-                                                Valid last name is required.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="useremail">Email</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                <span class="input-group-text">
-                                                    <i class="fa fa-fw ">@</i>
-                                                    
-                                                </span>
-                                                </div>
-                                                <input type="text" class="form-control" id="useremail"
-                                                       placeholder="email address" required="">
-                                                <div class="invalid-feedback" style="width: 100%;">
-                                                    Invalid email is entered
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="userPhNum">Phone Number</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                
-                                                <span class="input-group-text">
-                                                    <i class="fa fa-fw fa-phone"></i>
-                                                </span>
-                                                </div>
-                                                <input type="text" class="form-control" id="userPhNum"
-                                                       placeholder="phone number" required="">
-                                                <div class="invalid-feedback" style="width: 100%;">
-                                                    Invalid phone number entered.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="password">Password</label>
-                                            <div class="input-group">
-                                                
-                                                <input type="text" class="form-control" id="password"
-                                                       placeholder="password" required="">
-                                                <div class="invalid-feedback" style="width: 100%;">
-                                                    Password not strong enough
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="confirmPassword">Password Confirmation</label>
-                                            <div class="input-group">
-                                                
-                                                <input type="text" class="form-control" id="confirmPassword"
-                                                       placeholder="re-enter password" required="">
-                                                <div class="invalid-feedback" style="width: 100%;">
-                                                    Password does not match
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label >Gender</label>
-                                            <div class="custom-control custom-radio">
-                                                <input id="genderMale" type="radio" class="custom-control-input"
-                                                       required="">
-                                                <label class="custom-control-label" for="genderMale">Male</label>
-                                            </div>
-                                            <div class="custom-control custom-radio">
-                                                <input id="genderFemale" type="radio" class="custom-control-input" required="">
-                                                <label class="custom-control-label" for="genderFemale">Female</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 mb-3">
-                                            <label for="role">Role</label>
-                                            <select class="custom-select d-block w-100" id="role" required="">
-                                                <option value="">Choose...</option>
-                                                <option>Admin</option>
-                                                <option>Manager</option>
-                                                <option>Employee</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please select a valid role.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 
                 
