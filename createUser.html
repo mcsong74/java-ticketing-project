@@ -286,15 +286,17 @@
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
                                             <label >Gender</label>
+    
                                             <div class="custom-control custom-radio">
-                                                <input id="genderMale" type="radio" class="custom-control-input"
-                                                       required="">
+                                                <input id="genderMale" name="gender" type="radio"
+                                                       class="custom-control-input" checked="" required="">
                                                 <label class="custom-control-label" for="genderMale">Male</label>
                                             </div>
                                             <div class="custom-control custom-radio">
-                                                <input id="genderFemale" type="radio" class="custom-control-input" required="">
+                                                <input id="genderFemale" name="gender" type="radio" class="custom-control-input" required="">
                                                 <label class="custom-control-label" for="genderFemale">Female</label>
                                             </div>
+                                            
                                         </div>
                                         <div class="col-md-5 mb-3">
                                             <label for="role">Role</label>
@@ -310,11 +312,49 @@
                                         </div>
                                     </div>
                                 </form>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="mb-0">User List</h4>
+                            </div>
+                            <div class="card-body">
+                                <form class="needs-validation" novalidate="">
+                                    <table class="table table-sm table-hover table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>E-Mail(username)</th>
+                                            <th>Gender</th>
+                                            <th>Phone</th>
+                                            <th>Role</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>abc@test.com</td>
+                                            <td>Male</td>
+                                            <td>703-123-1234</td>
+                                            <td>Admin</td>
+                                            <td>
+    
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
