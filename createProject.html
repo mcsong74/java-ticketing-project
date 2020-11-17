@@ -8,35 +8,18 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Bootstrap CSS --->
-    <link
-            rel="stylesheet"
-            href="assets/vendor/bootstrap/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"/>
     <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/libs/css/style.css" />
-    <link
-            rel="stylesheet"
-            href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
-    />
-    <link
-            rel="stylesheet"
-            href="assets/vendor/charts/chartist-bundle/chartist.css"
-    />
-    <link
-            rel="stylesheet"
-            href="assets/vendor/charts/morris-bundle/morris.css"
-    />
-    <link
-            rel="stylesheet"
-            href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"
-    />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"/>
+    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css"/>
+    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css"/>
+    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"/>
     <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css" />
-    <link
-            rel="stylesheet"
-            href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
-    />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"/>
+    <link rel="stylesheet" href="assets/vendor/datepicker/tempusdominus-bootstrap-4.css" />
     <title>Cybertek - Ticketing Project</title>
-</head>
+</head>s
 
 <body>
 <!-- ============================================================== -->
@@ -48,9 +31,7 @@
     <!-- ============================================================== -->
     <div class="dashboard-header">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
-            <a class="navbar-brand" href="https://www.cybertekschool.com/"
-            >Cybertek</a
-            >
+            <a class="navbar-brand" href="https://www.cybertekschool.com/">Cybertek</a>
             <button
                     class="navbar-toggler"
                     type="button"
@@ -123,14 +104,15 @@
                         <li class="nav-divider">
                             <i class="fas fa-home"></i>
                             <a class=" fa-fw " href="welcome.html">Home</a>
+                        
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1">
+                            <a class="nav-link " href="#" data-toggle="collapse" aria-expanded="true"
+                               data-target="#submenu-1" aria-controls="submenu-1">
                                 <i class="fa fa-fw fa-user-circle"></i>Administration
                                 <span class="badge badge-success">6</span>
-                            
                             </a>
-                            <div id="submenu-1" class="collapse submenu" style="">
+                            <div id="submenu-1" class="expand submenu" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a class="nav-link" href="createUser.html">Create an User</a>
@@ -199,12 +181,156 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">This page is under construction - create a project</h2>
+                            <h2 class="pageheader-title">Create Project(s)</h2>
                         </div>
                     </div>
                 
                 </div>
-                
+                <div class="row">
+                    <div class="offset-xl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="mb-0">User Information</h4>
+                            </div>
+                            <div class="card-body">
+                                <form class="needs-validation" novalidate="">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-12">
+                                            <label for="firstName">Project Name</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                                            <div class="invalid-feedback">
+                                                Valid first name is required.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-12">
+                                            <label for="lastName">Project Code</label>
+                                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                            <div class="invalid-feedback">
+                                                Valid last name is required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-9 mb-9">
+                                            <label for="role">Assigned Manager</label>
+                                            <select class="custom-select d-block w-100" id="role" required="">
+                                                <option value="">Select ...</option>
+                                                <option>Manager 1</option>
+                                                <option>Manager 2</option>
+                                                <option>Manager 3</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select a valid manager.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-6">
+                                            <label for="startdate">Project Start Date</label>
+                                            <div class="form-group">
+                                                <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                                    <input id="startdate" type="text" class="form-control datetimepicker-input"
+                                                           data-target="#datetimepicker4" />
+                                                    <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                                        <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-6">
+                                            <label for="enddate">Project End Date</label>
+                                            <div class="form-group">
+                                                <div class="input-group date" id="datetimepicker5"
+                                                     data-target-input="nearest">
+                                                    <input id="enddate" type="text"
+                                                           class="form-control datetimepicker-input"
+                                                           data-target="#datetimepicker5" />
+                                                    <div class="input-group-append" data-target="#datetimepicker5" data-toggle="datetimepicker">
+                                                        <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-12">
+                                            <label  for="projectDetails">Project Details</label>
+                                            <textarea type="text" class="form-control" id="projectDetails" placeholder=""
+                                                      value="" required=""></textarea><br>
+                                            <div class="invalid-feedback">
+                                                Valid first name is required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                        
+                                        <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-12 fa-pull-right">
+                                            <button class="btn btn-success btn-sm fa-pull-right" type="button">
+                                                <i class="fas fa-accusoft"></i>Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </form>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-xl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="mb-0">User List</h4>
+                            </div>
+                            <div class="card-body">
+                                <form class="needs-validation" novalidate="">
+                                    <table class="table table-sm table-hover table-striped">
+                                        <thead >
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>E-Mail(username)</th>
+                                            <th>Gender</th>
+                                            <th>Phone</th>
+                                            <th>Role</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>abc@test.com</td>
+                                            <td>Male</td>
+                                            <td>703-123-1234</td>
+                                            <td>Admin</td>
+                                            <td>
+                                                <button class="btn btn-info btn-sm" type="submit">Update</button>
+                                                <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>John Smith</td>
+                                            <td>abc123@test.com</td>
+                                            <td>Male</td>
+                                            <td>703-123-2345</td>
+                                            <td>Manager</td>
+                                            <td>
+                                                <button class="btn btn-info btn-sm" type="submit">Update</button>
+                                                <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
@@ -243,5 +369,7 @@
 <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
 <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
 <script src="assets/libs/js/dashboard-ecommerce.js"></script>
+<script src="assets/vendor/datepicker/tempusdominus-bootstrap-4.js"></script>
+<script src="assets/vendor/datepicker/datepicker.js"></script>
 </body>
 </html>
