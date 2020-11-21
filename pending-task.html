@@ -187,95 +187,78 @@
                 
                 </div>
                 <div class="row">
-                    <div class="offset-xl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="mb-0">User Information</h4>
+                                <h4 class="mb-0">Task Status</h4>
                             </div>
                             <div class="card-body">
-                                <form class="needs-validation" novalidate="">
+                                <form >
                                     <div class="row">
                                         <div class="col-md-12 mb-12">
-                                            <label for="firstName">Project Name</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                                            <div class="invalid-feedback">
-                                                Valid first name is required.
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 mb-12">
-                                            <label for="lastName">Project Code</label>
-                                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                                            <div class="invalid-feedback">
-                                                Valid last name is required.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="col-md-9 mb-9">
-                                            <label for="role">Assigned Manager</label>
-                                            <select class="custom-select d-block w-100" id="role" required="">
+                                            <label for="project">Project</label>
+                                            <select class="custom-select d-block w-100" id="project" required="" disabled>
                                                 <option value="">Select ...</option>
-                                                <option>Manager 1</option>
-                                                <option>Manager 2</option>
-                                                <option>Manager 3</option>
+                                                <option>Human Resource CRM</option>
+                                                <option>Infra Update</option>
                                             </select>
-                                            <div class="invalid-feedback">
-                                                Please select a valid manager.
-                                            </div>
+            
+                                        </div>
+                                        <div class="col-md-12 mb-12">
+                                            <label for="assignEmployee">Assigned Employee</label>
+                                            <select class="custom-select d-block w-100 " id="assignEmployee" disabled>
+                                                <option value="">Select ...</option>
+                                                <option>Delisa Norre</option>
+                                                <option>Jessica Lin</option>
+                                                <option>John Kesy</option>
+                                                <option>Mike Smith</option>
+                                                <option>Ozzy</option>
+                                            </select>
+            
+                                        </div>
+                                    </div>
+        
+                                    <div class="row">
+                                        <div class="col-md-12 mb-12">
+                                            <label for="taskSubject">Task Subject</label>
+                                            <input type="text" class="form-control" id="taskSubject" placeholder=""
+                                                   value="" disabled>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6 mb-6">
-                                            <label for="startdate">Project Start Date</label>
-                                            <div class="form-group">
-                                                <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                                    <input id="startdate" type="date"
-                                                           class="form-control datetimepicker-input"
-                                                           data-target="#datetimepicker4" />
-                                                    <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
-                                                        <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-6">
-                                            <label for="enddate">Project End Date</label>
-                                            <div class="form-group">
-                                                <div class="input-group date" id="datetimepicker5"
-                                                     data-target-input="nearest">
-                                                    <input id="enddate" type="date"
-                                                           class="form-control datetimepicker-input"
-                                                           data-target="#datetimepicker5" />
-                                                    <div class="input-group-append" data-target="#datetimepicker5" data-toggle="datetimepicker">
-                                                        <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-md-12 mb-12">
-                                                    <label  for="projectDetails">Project Details</label>
-                                                    <textarea type="text" class="form-control" id="projectDetails" placeholder=""
-                                                              value="" required=""></textarea><br>
-                                                    <div class="invalid-feedback">
-                                                        Valid first name is required.
-                                                    </div>
+                                                    <label  for="details">Details</label>
+                                                    <textarea type="text" class="form-control" id="details"
+                                                              placeholder=""
+                                                              value="" disabled></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-12 mb-12 fa-pull-right">
-                                                    <button class="btn btn-success btn-sm fa-pull-right" type="button">
-                                                        <i class="fas fa-accusoft"></i>Save
-                                                    </button>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class=" row">
+                                        <div class="col-md-12 mb-12">
+                                            <label for="status">Status</label>
+                                            <select class="custom-select d-block w-100 " id="status">
+                                                <option value="">Select ...</option>
+                                                <option>Open</option>
+                                                <option>In Progress</option>
+                                                <option>Completed</option>
+                                                <option>Closed</option>
+                                            </select>
+    
                                         </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12 mb-12 fa-pull-right">
+                                            <button class="btn btn-success btn-sm fa-pull-right" type="button">
+                                                Save
+                                            </button>
+                                        </div>
+                                    </div>
+    
                                 </form>
                             
                             </div>
@@ -285,43 +268,49 @@
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="card" >
                                 <div class="card-header">
-                                    <h4 class="mb-0">User List</h4>
+                                    <h4 class="mb-0">Project List</h4>
                                 </div>
                                 <div class="card-body">
                                     <table class="table table-sm table-hover table-striped table-bordered ">
                                         <thead class="col-md-12 mb-12">
                                         <tr>
-                                            <th>Project Code</th>
-                                            <th>Project Name</th>
-                                            <th>Start / End Date</th>
-                                            <th>Manager</th>
+                                            <th>Project</th>
+                                            <th>Task Subject</th>
+                                            <th>Assigned Employee</th>
+                                            <th>Assigned Date</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>PRJ001</td>
-                                            <td>Human Resource CRM</td>
-                                            <td>11.03.2020-11.09.2020</td>
-                                            <td>Delisa Norre</td>
+                                            <td>PRJ001 - Human Resource CRM</td>
+                                            <td>Database Connection</td>
+                                            <td>John Kesy</td>
+                                            <td>11/01/2020 18:12</td>
                                             <td>In Progress</td>
                                             <td>
                                                 <button class="btn btn-warning btn-sm" type="submit">Update</button>
-                                                <button class="btn btn-danger btn-sm" type="submit">Delete</button>
-                                                <button class="btn btn-info btn-sm" type="submit">Compelete</button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>PRJ002</td>
-                                            <td>Infra Update</td>
-                                            <td>11.03.2020-11.06.2020</td>
-                                            <td>Craig Jark</td>
-                                            <td>UAT Testing</td>
+                                            <td>PRJ001 - Human Resource CRM</td>
+                                            <td>General Analysis</td>
+                                            <td>John Kesy</td>
+                                            <td>10/18/2020 18:12</td>
+                                            <td>Open</td>
                                             <td>
                                                 <button class="btn btn-warning btn-sm" type="submit">Update</button>
-                                                <button class="btn btn-danger btn-sm" type="submit">Delete</button>
-                                                <button class="btn btn-info btn-sm" type="submit">Compelete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>PRJ001 - Human Resource CRM</td>
+                                            <td>Deployment Activities - Docker</td>
+                                            <td>John Kesy</td>
+                                            <td>10/23/2020 18:12</td>
+                                            <td>In Progress</td>
+                                            <td>
+                                                <button class="btn btn-warning btn-sm" type="submit">Update</button>
                                             </td>
                                         </tr>
                                         </tbody>
